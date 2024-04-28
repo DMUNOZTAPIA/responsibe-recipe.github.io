@@ -1,0 +1,359 @@
+@font-face {
+  font-family: YoungSerif;
+  src: url(/recipe-page-main/recipe-page-main/assets/fonts/young-serif/YoungSerif-Regular.ttf);
+}
+@font-face {
+  font-family: Outfit;
+  src: url(/recipe-page-main/recipe-page-main/assets/fonts/outfit/Outfit-VariableFont_wght.ttf);
+}
+* {
+  --color-principal: black;
+  --color--secundario: rgb(92, 92, 92);
+  --color-terciario: rgb(127, 29, 133);
+  --color-cuarto: rgb(138, 90, 90);
+  --color-5: rgb(131, 17, 17);
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: rgb(250, 233, 218);
+}
+@media (min-width: 720px) {
+  .contenedor-principal {
+    width: 55%;
+    max-width: 1045px;
+    background-color: white;
+    margin: auto; /*el div queda centrado en la pagina*/
+    margin-top: 10em;
+    padding: 0;
+    border-radius: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  h1 {
+    font-family: YoungSerif;
+    font-size: 3.5rem;
+    font-weight: 300;
+  }
+  p,
+  ol,
+  li {
+    font-family: Outfit;
+    font-size: 1.5rem;
+    color: var(--color--secundario);
+    line-height: 1.5;
+  }
+  .contenedor-titulo {
+    margin: 0 4em;
+    margin-bottom: 0;
+    padding: 0;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .titulo-titulo {
+    margin-top: 1em;
+    margin-bottom: 0;
+  }
+  .img-imagen {
+    margin: 4em;
+    margin-bottom: 0;
+    width: 88%;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    border-radius: 2em;
+  }
+  .contenedor-preparación {
+    margin: 0 4em;
+    margin-top: 1em;
+    width: 100%;
+    font-display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: rgb(244, 224, 247);
+    border-radius: 1em;
+  }
+  .preparación-titulo {
+    font-family: Outfit;
+    font-size: 2em;
+    font-weight: 500;
+    margin-left: 1.5em;
+    color: var(--color-terciario);
+  }
+  .preparación-lista {
+    margin: 2.5em;
+    font-size: 1.5rem;
+  }
+  .preparación-lista {
+    list-style-type: disc;
+  }
+  .preparación-lista li::marker {
+    color: var(--color-terciario);
+  }
+
+  .lista-lista {
+    margin: 15px;
+    left: 0;
+    color: var(--color--secundario);
+    text-indent: 25px;
+  }
+  .contenedor-ingredientes {
+    margin: 0 50px;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .ingredientes-titulo {
+    font-size: 3rem;
+    color: var(--color-cuarto);
+  }
+  .ingredientes-lista {
+    list-style-type: disc;
+  }
+  .ingredientes-lista li::marker {
+    color: var(--color-cuarto);
+  }
+  .ingredientes-lista-lista {
+    font-size: 1.5rem;
+    color: var(--color--secundario);
+    text-indent: 28px;
+    margin: 15px;
+  }
+  hr {
+    margin: 50px;
+    width: 100%;
+    margin-left: 0;
+    margin-bottom: 0;
+  }
+  .contenedor-instructions {
+    margin: 0 50px;
+  }
+  .instructions-titulo {
+    margin-top: 15px;
+    font-size: 3rem;
+    color: var(--color-cuarto);
+  }
+  .instructions-ol li::marker {
+    color: var(--color-cuarto);
+    font-weight: bold;
+    position: absolute;
+    padding-left: 20px;
+  }
+  .instructions-ol-li {
+    font-size: 1.5rem;
+    color: var(--color--secundario);
+    text-indent: 30em hanging;
+    margin: 15px;
+    padding-left: 28px;
+    flex-wrap: wrap;
+    text-align: justify;
+  }
+  .contenedor-nutrition {
+    width: 100%;
+    margin: 0 50px;
+  }
+  .nutrition-titulo {
+    font-size: 3rem;
+    color: var(--color-cuarto);
+  }
+  .contenedor-informe {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 40px 40px 40px 40px 40px;
+    margin-bottom: 50px;
+  }
+  .separador {
+    grid-column: 1/3;
+  }
+  .informe-calorias {
+    margin-left: 45px;
+  }
+  .informe-carbs {
+    margin-left: 45px;
+  }
+  .informe-protein {
+    margin-left: 45px;
+  }
+  .informe-fat {
+    margin-left: 45px;
+  }
+  .informe-g {
+    font-weight: bold;
+    color: var(--color-5);
+  }
+}
+@media (min-width: 350px) and (max-width: 719px) {
+  .contenedor-principal {
+    width: 55%;
+    max-width: 719px;
+    min-width: 319px;
+    background-color: white;
+    margin: auto; /*el div queda centrado en la pagina*/
+    margin-top: 15em;
+    padding: 0;
+    border-radius: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 0em;
+  }
+  .img-imagen {
+    margin-bottom: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    border-radius: 0.5em;
+  }
+  h1 {
+    font-family: YoungSerif;
+    font-size: 1.8em;
+    margin: 0.8em;
+    font-weight: 300;
+  }
+  p,
+  ol,
+  li {
+    font-family: Outfit;
+    font-size: 0.9em;
+    color: var(--color--secundario);
+    line-height: 1.5;
+  }
+  .titulo-parrafo {
+    margin: 2em;
+  }
+  .contenedor-preparación {
+    margin: 0 2em;
+    width: 100%;
+    font-display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: rgb(244, 224, 247);
+    border-radius: 0.5em;
+  }
+  .preparación-titulo {
+    font-family: Outfit;
+    font-size: 1em;
+    font-weight: 500;
+    margin-left: 1em;
+    color: var(--color-terciario);
+  }
+  .preparación-lista {
+    font-size: 1em;
+  }
+  .preparación-lista {
+    list-style-type: disc;
+  }
+  .preparación-lista li::marker {
+    color: var(--color-terciario);
+  }
+
+  .lista-lista {
+    margin: 0;
+    left: 0;
+    color: var(--color--secundario);
+    text-indent: 0.5em;
+    line-height: 2em;
+  }
+  .contenedor-ingredientes {
+    margin: 0 2em;
+    width: 100%;
+    margin-bottom: 1em;
+  }
+  .ingredientes-titulo {
+    font-size: 1.5em;
+    margin-left: 0;
+    color: var(--color-cuarto);
+  }
+  .ingredientes-lista {
+    list-style-type: disc;
+  }
+  .ingredientes-lista li::marker {
+    color: var(--color-cuarto);
+    position: absolute;
+  }
+  .ingredientes-lista-lista {
+    font-size: 0.9em;
+    color: var(--color--secundario);
+    text-indent: 0em;
+    margin-left: -1em;
+    line-height: 2em;
+  }
+  .contenedor-instructions {
+    margin: 0 2em;
+  }
+  .instructions-titulo {
+    margin-top: 0;
+    font-size: 1.5em;
+    margin-left: 0;
+    color: var(--color-cuarto);
+  }
+  .instructions-ol {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+  }
+  .instructions-ol li::marker {
+    color: var(--color-cuarto);
+    font-weight: bold;
+  }
+  .instructions-ol-li {
+    margin-left: -1.2em;
+    color: var(--color--secundario);
+    padding-left: 0.7em;
+  }
+  hr {
+    margin: 0;
+    width: 100%;
+  }
+  
+  .contenedor-nutrition {
+    width: 100%;
+    margin: 0 2em;
+  }
+  .nutrition-titulo {
+    font-size: 1.5em;
+    margin-left: 0;
+    color: var(--color-cuarto);
+  }
+  .nutrition-párrafo{
+    font-size: 0.8em;
+  }
+  .contenedor-informe {
+    width: 100%;
+    margin-left: 0;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 3em 0em 3em 0em 3em 0em;
+    margin-bottom: 50px;
+  }
+  .separador {
+    grid-column: 1/3;
+  }
+  .informe-calorias {
+    margin-left: 45px;
+  }
+  .informe-carbs {
+    margin-left: 45px;
+  }
+  .informe-protein {
+    margin-left: 45px;
+  }
+  .informe-fat {
+    margin-left: 45px;
+  }
+  .informe-g {
+    font-weight: bold;
+    color: var(--color-5);
+  }
+
+}
